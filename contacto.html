@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Libreria iconos web https://ionic.io -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Contacto</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="index.html" class="logo">Lucía Ramírez Verdú</a>
+            <ul class="navbar">
+                <li><a href="sobremi.html">Quién Soy</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="proyectos.html">Proyectos Destacados</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="contenidocontacto">
+            <div class="titulocontacto">
+                <h2>Contacto</h2>
+            </div>
+            <div class="bloquecontacto">
+                <div class="infcontacto">
+                    <h3>Información de Contacto</h3>
+                    <ul>
+                        <li><span><ion-icon name="call-outline"></ion-icon> Teléfono</span> <br> (+34) 612 34 56 78</li>
+                        <li><span><ion-icon name="mail-outline"></ion-icon> Email</span> <br><a href="mailto:lucia.ramirez491@comunidadunir.net">lucia.ramirez491@comunidadunir.net</a> </li>
+                    </ul>
+                    <!--Importado el mapa desde google maps, en compartir -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50057.83392607042!2d-0.5137236465017142!3d38.35790089723687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1746232436390!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="formulario-contacto">
+                    <h3>Solicitar Información</h3>
+                    <form action="mailto:lucia.ramirez491@comunidadunir.net" method="post">
+                        <fieldset>
+                            <legend>Datos Personales</legend>
+                            <!--El asterisco representa el campo obligatorio-->
+                            <div class="elemento">
+                                <label for="name">Nombre *</label> <br>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            <div class="elemento">
+                                <label for="apells">Apellidos *</label> <br>
+                                <input type="text" name="apells" id="apells" required>
+                            </div>
+                            <div class="elemento">
+                                <label for="email">Correo Electrónico *</label> <br>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="elemento">
+                                <label for="tel">Teléfono *</label> <br>
+                                <input type="tel" name="tel" id="tel" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Servicio a Contratar</legend>
+                            <select name="servicio">
+                                <option value="1">Back-End</option>
+                                <option value="2">Front-End</option>
+                                <option value="3">Full-Stack</option>
+                                <option value="4">Otro</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Asunto</legend>
+                            <textarea name="asunto" id="asunto"></textarea>
+                        </fieldset>
+                        <div class="checkbox">
+                            <input type="checkbox" id="politica" name="politica" required>
+                            <label for="politica">Acepto la <a href="#">política de privacidad</a>.</label>
+                        </div>
+                        <div class="botones">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight">
+            <p>&copy; Web Personal creada para la Actividad 4 - Landing Page de Lenguaje de Marcas de DAM</p>
+        </div>
+        <ul class="redesSociales">
+            <li><a href="mailto:lucia.ramirez491@comunidadunir.net"><ion-icon name="mail-open-outline"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/luc%C3%ADa-ram%C3%ADrez-verd%C3%BA-8591aa350/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://github.com/lrv491"><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --color-azulado-opacidad: rgba(131, 213, 245, 0.3);
+    --color-azulado: rgba(131, 213, 245);
+    --morado-azulado: rgba(133,128,255);
+    --morado-azulado-opacidad: rgba(133,128,255,0.2);
+    --rosa-crema:rgb(255,231,223);
+    --marron-opacidad: rgb(73,20,53,0.5);
+    --marron: rgb(73,20,53);
+    --blanco-leche: rgba(255, 255, 255, 0.5);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+    padding: 100px;
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--morado-azulado);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+}
+
+header .logo:hover{
+    color: var(--morado-azulado);
+    background-color: white;
+    transition: 0.5s;
+}
+
+header .navbar{
+    position:relative;
+    display: flex;
+}
+
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a{
+    text-decoration: none;
+    color: var(--marron);
+    font-weight: 600;
+    padding: 10px;
+    font-size: 1em;
+    text-transform: uppercase;   
+}
+
+header .navbar li a:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+/*Contenido de la web*/
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.contenido .tituloBox{
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+    left: 50px;
+}
+
+.contenido .tituloBox h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: var(--marron);
+    font-family: "Audiowide", sans-serif;
+}
+
+.contenido .tituloBox h2 span{
+    background-color: var(--marron-opacidad);
+    color: white;
+    padding: 0 10px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.contenido .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: var(--marron);    
+    margin-bottom: 20px;
+}
+
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color:var(--morado-azulado) ;
+    padding: 10px 20px;
+    margin:left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.contenido .tituloBox a:hover{
+    color: var(--morado-azulado);
+    background: none;
+    transition: 0.3s;
+}
+
+.contenido .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -40px;
+    z-index: -5;
+}
+
+.contenido .imgBox img{
+    height: 80vh;
+}
+
+
+
+/*CopyRight*/
+
+.copyRight{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 20px;
+    padding:0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.copyRight p{
+    color: var(--marron);
+    text-align: center;
+    font-weight: 700;
+}
+
+/*RRSS*/
+
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+
+.redesSociales li{
+    padding: 10px;
+}
+
+.redesSociales li a{
+    color:var(--marron) ;
+    font-size:2.5em;
+}
+
+.redesSociales li:hover a{
+    color: white;
+}
+
+
+/****** Sobre mi ********/
+
+.contenido .tituloSobreMi{
+    position: relative;
+    max-width: 600px;
+    margin-left: 15rem;
+}
+
+.contenido .tituloSobreMi h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: var(--marron);
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 0.5em;
+    margin-top: 4rem;
+}
+
+.contenido .tituloSobreMi .fondoSobreMi{
+    margin-bottom: 20px;
+    background-color: var(--blanco-leche);
+    padding: 1em;
+    border-radius: 5%;   
+}
+
+.contenido .tituloSobreMi .fondoSobreMi p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: var(--marron);    
+    margin-bottom: 20px;
+    
+}
+
+.contenido .imagenSobreMi{
+    display: flex;
+    margin-right:10rem;
+}
+
+.contenido .imagenSobreMi img{
+    height: 70vh;
+    margin: auto;
+    
+}
+
+
+/********* CV **********/
+
+.contenidocv{
+    margin-top: 4rem;
+    display: flex;
+    /* Dirección de los contenidos en tipo columna */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contenidocv .titulocv{
+    position: relative;
+    max-width: 600px;
+}
+
+.contenidocv .titulocv h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: var(--marron);
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 0.5em;
+}
+
+.contenidocv h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--marron);
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 0.5em;
+}
+
+.contenidocv .perfilcv, .educacioncv{
+    margin-bottom: 1.5em;
+}
+
+
+.contenidocv .perfilcv p, .educacioncv p{
+    max-width: 550px;
+    line-height: 1.5em;
+}
+
+.contenidocv .educacioncv p span{
+    font-weight: 700;
+}
+
+.habilidadescv{
+    max-width: 550px;
+}
+
+.contenidocv .habilidadescv img{
+    width: 150px;
+    margin: 15px; 
+}
+
+
+/*********** Contacto *********/
+
+.contenidocontacto{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.contenidocontacto .titulocontacto{
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.contenidocontacto .titulocontacto h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: var(--marron);
+    font-family: "Audiowide", sans-serif;
+}
+
+.contenidocontacto .bloquecontacto{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contenidocontacto .infcontacto, .formulario-contacto{
+    position: relative;
+    text-align: left;
+    margin: 0 7rem;
+    padding: 2rem;
+}
+
+.contenidocontacto .infcontacto h3,.formulario-contacto h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--marron);
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 0.5em;
+}
+
+.contenidocontacto .infcontacto ul{
+    line-height: 2.5rem;
+}
+
+.contenidocontacto .infcontacto li{
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.contenidocontacto .infcontacto li span{
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    background-color: var(--marron-opacidad);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.contenidocontacto .infcontacto li a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenidocontacto .infcontacto iframe{
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px var(--marron);
+}
+
+.contenidocontacto .formulario-contacto{
+    background-color: var(--morado-azulado);
+    border-radius: 20px;
+}
+
+.contenidocontacto .formulario-contacto, .formulario-contacto h3{
+    color: white;
+}
+
+.contenidocontacto .formulario-contacto form{
+    line-height: 2rem;
+}
+
+.contenidocontacto .formulario-contacto fieldset{
+    border: none;
+    margin-top: 1rem;
+}
+
+.contenidocontacto .formulario-contacto fieldset legend{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contenidocontacto .formulario-contacto textarea, input[type="text"], [type="email"], [type="tel"]{
+    width: 100%;
+    height: 30px;
+}
+
+.contenidocontacto .formulario-contacto textarea{
+    height: 100px;
+}
+
+.contenidocontacto .formulario-contacto input:focus, .formulario-contacto textarea:focus{
+    background-color: var(--marron-opacidad);
+    color: white;
+}
+
+.contenidocontacto .botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenidocontacto .botones input[type="submit"], .botones input[type="reset"]{
+    width: 40%;
+    margin:0 15px;
+    margin-top:1rem;
+    background-color: var(--marron-opacidad);
+    color: white;
+    border-color: white;
+    border-radius: 5px ;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contenidocontacto .botones input[type="submit"]:hover, .botones input[type="reset"]:hover{
+    color: var(--marron);
+    border-color: var(--marron);
+    background-color:var(--rosa-crema);
+}
+
+
+/**********Proyectos Destacados *************/
+
+.contenidoproyecto{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.contenidoproyecto .tituloproyecto h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: var(--marron);
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoproyecto h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--marron);
+    font-family: "Audiowide", sans-serif;
+    margin-bottom: 0.5em;
+    margin-top: 3em;
+}
+
+/* Contenido sacado del canal de YouTube de Raúl:  https://www.youtube.com/watch?v=K5G13_QE__s*/
+.contenedor-galeria{
+    width: 1200px;
+    height: 447px;
+    overflow: hidden;
+    margin:50px auto;
+    box-shadow: 0 0 25px 10px var(--marron-opacidad);
+}
+
+.contenedor-galeria ul {
+    list-style: none;
+    height: 100%;
+}
+
+.contenedor-galeria ul li{
+    position: relative;
+    display: block;
+    /* 1200 (width) / 6 (fotos)*/
+    width:200px;
+    height: 447px;
+    float: left;
+    box-shadow: 0 0 25px 10px var(--marron-opacidad);
+    transition: all 0.3s;
+    margin-bottom: 2rem;
+}
+
+.contenedor-galeria ul li img{
+    width: 1000px;
+    height: 100%;
+    display: block;
+}
+
+
+.contenedor-galeria ul:hover li{
+    /* 2000 / 5 fotos */
+    width: 40px;
+    filter: brightness(50%);
+}
+
+.contenedor-galeria ul li:hover{
+    width: 1000px;
+    filter: brightness(100%);
+}
+
+
+
+
+
+
+
+
